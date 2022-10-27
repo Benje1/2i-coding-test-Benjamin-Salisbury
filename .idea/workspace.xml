@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b3117ff-1214-40fc-bea8-a97fa00d719d" name="Changes" comment="making the tests">
-      <change beforePath="$PROJECT_DIR$/src/NumberCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberCheckerTest.java" afterDir="false" />
+    <list default="true" id="5b3117ff-1214-40fc-bea8-a97fa00d719d" name="Changes" comment="the lists can be sorted, the duplicates removed, or both.">
+      <change beforePath="$PROJECT_DIR$/src/NumberChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666878382604</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="the lists can be sorted, the duplicates removed, or both.">
+      <created>1666879127452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666879127452</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +186,7 @@
     <MESSAGE value="sort function works" />
     <MESSAGE value="both functions made into one" />
     <MESSAGE value="making the tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="making the tests" />
+    <MESSAGE value="the lists can be sorted, the duplicates removed, or both." />
+    <option name="LAST_COMMIT_MESSAGE" value="the lists can be sorted, the duplicates removed, or both." />
   </component>
 </project>

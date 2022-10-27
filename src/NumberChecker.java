@@ -7,7 +7,8 @@ public class NumberChecker {
 
     //Assumption one: all numbers are going to be whole numbers
     //Assumption two: all numbers are going to be Integers rather than int
-    //Assumption three: it does not matter if the array is sorted first or second
+    //Assumption three: it does not matter if the array is sorted first or second, --
+    //-- but the duplicates are removed first so that the list is smaller therefore more efficient
     //Assumption four: there is no reason not to use the inbuilt functions of java
 
 
