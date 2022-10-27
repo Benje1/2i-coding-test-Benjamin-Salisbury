@@ -8,14 +8,19 @@ import static org.junit.Assert.*;
 
 public class NumberCheckerTest {
 
+    //Three tests are supposed to fail, they are there for me to make sure that the tests aren't passing for any reason other then the function working as expected.
 
+
+    //NumberChecker is not a static class, though it could be, so it is initialised
     NumberChecker numberChecker;
+    //Other lists are initialised for the test
     List<Integer> listOfNumbers;
     List<Integer> listOfDistinctNumbers;
     List<Integer> wrongList;
     List<Integer> sortedList;
     List<Integer> sortedAndDistinctList;
 
+    //Set up stage, anything that goes to the tests is set up here to keep the code DRY
     @Before
     public void before(){
         numberChecker = new NumberChecker();
@@ -55,6 +60,11 @@ public class NumberCheckerTest {
         sortedList.add(1);
         sortedList.add(1);
         sortedAndDistinctList.add(65);
+        sortedAndDistinctList.add(24);
+        sortedAndDistinctList.add(12);
+        sortedAndDistinctList.add(7);
+        sortedAndDistinctList.add(3);
+        sortedAndDistinctList.add(1);
     }
 
     @Test
@@ -73,8 +83,20 @@ public class NumberCheckerTest {
         assertArrayEquals(sortedList.toArray(), numberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
     }
 
+    //This following test is made to fail, checking that the function does not default to passing
     @Test
     public void failTestAsNotOrdered(){
+        assertArrayEquals(wrongList.toArray(), numberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
+    }
+
+    @Test
+    public void sortAndRemoveDuplicates(){
+        assertArrayEquals(sortedAndDistinctList.toArray(), numberChecker.removeDuplicatesAndSortFromHighToLow(listOfNumbers).toArray());
+    }
+
+    //This following test is made to fail, checking that the function does not default to passing
+    @Test
+    public void failTestAsNotOrderedOrDistinct(){
         assertArrayEquals(wrongList.toArray(), numberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
     }
 

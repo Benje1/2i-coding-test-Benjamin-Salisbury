@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b3117ff-1214-40fc-bea8-a97fa00d719d" name="Changes" comment="making test for sort function">
+    <list default="true" id="5b3117ff-1214-40fc-bea8-a97fa00d719d" name="Changes" comment="making the tests">
       <change beforePath="$PROJECT_DIR$/src/NumberCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberCheckerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NumberCheckerTest.isTheListSorted">
+  <component name="RunManager" selected="JUnit.NumberCheckerTest.sortAndRemoveDuplicates">
     <configuration name="NumberCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Two-I-Codeing-Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -62,21 +62,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberCheckerTest.areTheDistinctNumbersOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Two-I-Codeing-Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NumberCheckerTest" />
-      <option name="METHOD_NAME" value="areTheDistinctNumbersOut" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NumberCheckerTest.failTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Two-I-Codeing-Test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NumberCheckerTest" />
       <option name="METHOD_NAME" value="failTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberCheckerTest.failTestAsNotOrderedOrDistinct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Two-I-Codeing-Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NumberCheckerTest" />
+      <option name="METHOD_NAME" value="failTestAsNotOrderedOrDistinct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -92,12 +92,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NumberCheckerTest.sortAndRemoveDuplicates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Two-I-Codeing-Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NumberCheckerTest" />
+      <option name="METHOD_NAME" value="sortAndRemoveDuplicates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NumberCheckerTest.sortAndRemoveDuplicates" />
+        <item itemvalue="JUnit.NumberCheckerTest.failTestAsNotOrderedOrDistinct" />
+        <item itemvalue="JUnit.NumberCheckerTest" />
         <item itemvalue="JUnit.NumberCheckerTest.isTheListSorted" />
         <item itemvalue="JUnit.NumberCheckerTest.failTest" />
-        <item itemvalue="JUnit.NumberCheckerTest.areTheDistinctNumbersOut" />
-        <item itemvalue="JUnit.NumberCheckerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +135,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666877566027</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sort function works">
+      <created>1666877859007</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666877859007</updated>
+    </task>
+    <task id="LOCAL-00004" summary="both functions made into one">
+      <created>1666878342895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666878342895</updated>
+    </task>
+    <task id="LOCAL-00005" summary="making the tests">
+      <created>1666878382604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666878382604</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +176,9 @@
     <MESSAGE value="Distinct function works" />
     <MESSAGE value="making the sort function" />
     <MESSAGE value="making test for sort function" />
-    <option name="LAST_COMMIT_MESSAGE" value="making test for sort function" />
+    <MESSAGE value="sort function works" />
+    <MESSAGE value="both functions made into one" />
+    <MESSAGE value="making the tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="making the tests" />
   </component>
 </project>
