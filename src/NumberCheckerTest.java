@@ -14,6 +14,7 @@ public class NumberCheckerTest {
     List<Integer> listOfDistinctNumbers;
     List<Integer> wrongList;
     List<Integer> sortedList;
+    List<Integer> sortedAndDistinctList;
 
     @Before
     public void before(){
@@ -22,6 +23,7 @@ public class NumberCheckerTest {
         listOfDistinctNumbers = new ArrayList<>();
         wrongList = new ArrayList<>();
         sortedList = new ArrayList<>();
+        
         listOfNumbers.add(1);
         listOfNumbers.add(1);
         listOfNumbers.add(3);
