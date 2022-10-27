@@ -23,7 +23,7 @@ public class NumberCheckerTest {
         listOfDistinctNumbers = new ArrayList<>();
         wrongList = new ArrayList<>();
         sortedList = new ArrayList<>();
-        
+        sortedAndDistinctList = new ArrayList<>();
         listOfNumbers.add(1);
         listOfNumbers.add(1);
         listOfNumbers.add(3);
@@ -54,6 +54,7 @@ public class NumberCheckerTest {
         sortedList.add(3);
         sortedList.add(1);
         sortedList.add(1);
+        sortedAndDistinctList.add(65);
     }
 
     @Test
