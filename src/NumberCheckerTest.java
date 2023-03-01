@@ -10,20 +10,20 @@ public class NumberCheckerTest {
 
     //Three tests are supposed to fail, they are there for me to make sure that the tests aren't passing for any reason other then the function working as expected.
 
-
-    //NumberChecker is not a static class, though it could be, so it is initialised
-    NumberChecker numberChecker;
     //Other lists are initialised for the test
     List<Number> listOfNumbers;
     List<Number> listOfDistinctNumbers;
     List<Number> wrongList;
     List<Number> sortedList;
     List<Number> sortedAndDistinctList;
+    List<Number> listWithDoublesAndDuplicates;
+    List<Number> listWithoutDuplicates;
+    List<Number> listWithSortedDoubles;
+    List<Number> sortedAndDistinctDoubleList;
 
     //Set up stage, anything that goes to the tests is set up here to keep the code DRY
     @Before
     public void before(){
-        numberChecker = new NumberChecker();
         listOfNumbers = new ArrayList<>(){
             {
                 add(1);
@@ -72,39 +72,86 @@ public class NumberCheckerTest {
             add(3);
             add(1);
         }};
+        listWithDoublesAndDuplicates = new ArrayList<>(){{
+            add(3.6);
+            add(3.6);
+            add(3);
+            add(2.5);
+            add(5.2);
+            add(10);
+            add(10);
+        }};
+        listWithoutDuplicates = new ArrayList<>(){{
+            add(3.6);
+            add(3);
+            add(2.5);
+            add(5.2);
+            add(10);
+        }};
+        listWithSortedDoubles = new ArrayList<>(){{
+            add(2.5);
+            add(3);
+            add(3.6);
+            add(3.6);
+            add(5.2);
+            add(10);
+            add(10);
+        }};
+        sortedAndDistinctDoubleList = new ArrayList<>(){{
+            add(2.5);
+            add(3);
+            add(3.6);
+            add(5.2);
+            add(10);
+        }};
     }
 
     @Test
     public void areTheDistinctNumbersOut(){
-        assertArrayEquals(listOfDistinctNumbers.toArray(), numberChecker.removeDuplicates(listOfNumbers).toArray());
+        assertArrayEquals(listOfDistinctNumbers.toArray(), NumberChecker.removeDuplicates(listOfNumbers).toArray());
     }
 
     //This following test is made to fail, checking that the function does not default to passing
     @Test
     public void failTestAsNotSame(){
-        assertArrayEquals(wrongList.toArray(), numberChecker.removeDuplicates(listOfNumbers).toArray());
+        assertArrayEquals(wrongList.toArray(), NumberChecker.removeDuplicates(listOfNumbers).toArray());
     }
 
     @Test
     public void isTheListSorted(){
-        assertArrayEquals(sortedList.toArray(), numberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
+        assertArrayEquals(sortedList.toArray(), NumberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
     }
 
     //This following test is made to fail, checking that the function does not default to passing
     @Test
     public void failTestAsNotOrdered(){
-        assertArrayEquals(wrongList.toArray(), numberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
+        assertArrayEquals(wrongList.toArray(), NumberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
     }
 
     @Test
     public void sortAndRemoveDuplicates(){
-        assertArrayEquals(sortedAndDistinctList.toArray(), numberChecker.removeDuplicatesAndSortFromHighToLow(listOfNumbers).toArray());
+        assertArrayEquals(sortedAndDistinctList.toArray(), NumberChecker.removeDuplicatesAndSortFromHighToLow(listOfNumbers).toArray());
     }
 
     //This following test is made to fail, checking that the function does not default to passing
     @Test
     public void failTestAsNotOrderedOrDistinct(){
-        assertArrayEquals(wrongList.toArray(), numberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
+        assertArrayEquals(wrongList.toArray(), NumberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
+    }
+
+    @Test
+    public void removeDuplicatesFromDoubleList(){
+        assertArrayEquals(listWithoutDuplicates.toArray(), NumberChecker.removeDuplicates(listWithDoublesAndDuplicates).toArray());
+    }
+
+    @Test
+    public void sortDoublesInDescendingOrder(){
+        assertArrayEquals(listWithSortedDoubles.toArray(), NumberChecker.sortNumbersFromHighToLow(listWithDoublesAndDuplicates).toArray());
+    }
+
+    @Test
+    public void sortedAndDistinctListOfDoubles(){
+        assertArrayEquals(sortedAndDistinctDoubleList.toArray(), NumberChecker.removeDuplicatesAndSortFromHighToLow(listWithDoublesAndDuplicates).toArray());
     }
 
 }
