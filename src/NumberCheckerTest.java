@@ -16,6 +16,10 @@ public class NumberCheckerTest {
     List<Number> wrongList;
     List<Number> sortedList;
     List<Number> sortedAndDistinctList;
+    List<Number> onlyDoubleList;
+    List<Number> distinctDoubleOnlyLit;
+    List<Number> sortedDoubleOnlyList;
+    List<Number> distinctAndSortedDoubleOnlyList;
     List<Number> listWithDoublesAndDuplicates;
     List<Number> listWithoutDuplicates;
     List<Number> listWithSortedDoubles;
@@ -89,20 +93,56 @@ public class NumberCheckerTest {
             add(10);
         }};
         listWithSortedDoubles = new ArrayList<>(){{
-            add(2.5);
-            add(3);
-            add(3.6);
-            add(3.6);
+            add(10);
+            add(10);
             add(5.2);
-            add(10);
-            add(10);
+            add(3.6);
+            add(3.6);
+            add(3);
+            add(2.5);
         }};
         sortedAndDistinctDoubleList = new ArrayList<>(){{
-            add(2.5);
-            add(3);
-            add(3.6);
-            add(5.2);
             add(10);
+            add(5.2);
+            add(3.6);
+            add(3);
+            add(2.5);
+        }};
+        onlyDoubleList = new ArrayList<>(){{
+            add(3.5);
+            add(1.4);
+            add(9.4);
+            add(10.0);
+            add(3.5);
+            add(3.6);
+            add(8.4);
+            add(8.4);
+        }};
+        distinctDoubleOnlyLit = new ArrayList<>(){{
+            add(3.5);
+            add(1.4);
+            add(9.4);
+            add(10.0);
+            add(3.6);
+            add(8.4);
+        }};
+        sortedDoubleOnlyList = new ArrayList<>(){{
+            add(10.0);
+            add(9.4);
+            add(8.4);
+            add(8.4);
+            add(3.6);
+            add(3.5);
+            add(3.5);
+            add(1.4);
+        }};
+        distinctAndSortedDoubleOnlyList = new ArrayList<>(){{
+            add(10.0);
+            add(9.4);
+            add(8.4);
+            add(3.6);
+            add(3.5);
+            add(1.4);
         }};
     }
 
@@ -137,6 +177,21 @@ public class NumberCheckerTest {
     @Test
     public void failTestAsNotOrderedOrDistinct(){
         assertArrayEquals(wrongList.toArray(), NumberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
+    }
+
+    @Test
+    public void doubleOnlyListRemoveDuplicates(){
+        assertArrayEquals(distinctDoubleOnlyLit.toArray(), NumberChecker.removeDuplicates(onlyDoubleList).toArray());
+    }
+
+    @Test
+    public void doubleOnlySortList(){
+        assertArrayEquals(sortedDoubleOnlyList.toArray(), NumberChecker.sortNumbersFromHighToLow(onlyDoubleList).toArray());
+    }
+
+    @Test
+    public void doubleOnlySortAndRemoveDuplicates(){
+        assertArrayEquals(distinctAndSortedDoubleOnlyList.toArray(), NumberChecker.removeDuplicatesAndSortFromHighToLow(onlyDoubleList).toArray());
     }
 
     @Test
