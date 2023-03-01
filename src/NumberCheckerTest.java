@@ -24,47 +24,54 @@ public class NumberCheckerTest {
     @Before
     public void before(){
         numberChecker = new NumberChecker();
-        listOfNumbers = new ArrayList<>();
-        listOfDistinctNumbers = new ArrayList<>();
-        wrongList = new ArrayList<>();
-        sortedList = new ArrayList<>();
-        sortedAndDistinctList = new ArrayList<>();
-        listOfNumbers.add(1);
-        listOfNumbers.add(1);
-        listOfNumbers.add(3);
-        listOfNumbers.add(12);
-        listOfNumbers.add(7);
-        listOfNumbers.add(24);
-        listOfNumbers.add(3);
-        listOfNumbers.add(65);
-        listOfNumbers.add(12);
-        listOfNumbers.add(65);
-        listOfDistinctNumbers.add(1);
-        listOfDistinctNumbers.add(3);
-        listOfDistinctNumbers.add(12);
-        listOfDistinctNumbers.add(7);
-        listOfDistinctNumbers.add(24);
-        listOfDistinctNumbers.add(65);
-        wrongList.add(1);
-        wrongList.add(1);
-        wrongList.add(1);
-        wrongList.add(1);
-        sortedList.add(65);
-        sortedList.add(65);
-        sortedList.add(24);
-        sortedList.add(12);
-        sortedList.add(12);
-        sortedList.add(7);
-        sortedList.add(3);
-        sortedList.add(3);
-        sortedList.add(1);
-        sortedList.add(1);
-        sortedAndDistinctList.add(65);
-        sortedAndDistinctList.add(24);
-        sortedAndDistinctList.add(12);
-        sortedAndDistinctList.add(7);
-        sortedAndDistinctList.add(3);
-        sortedAndDistinctList.add(1);
+        listOfNumbers = new ArrayList<>(){
+            {
+                add(1);
+                add(1);
+                add(3);
+                add(12);
+                add(7);
+                add(24);
+                add(3);
+                add(65);
+                add(12);
+                add(65);
+            }
+        };
+        listOfDistinctNumbers = new ArrayList<>(){{
+            add(1);
+            add(3);
+            add(12);
+            add(7);
+            add(24);
+            add(65);
+        }};
+        wrongList = new ArrayList<>(){{
+            add(1);
+            add(1);
+            add(1);
+            add(1);
+        }};
+        sortedList = new ArrayList<>(){{
+            add(65);
+            add(65);
+            add(24);
+            add(12);
+            add(12);
+            add(7);
+            add(3);
+            add(3);
+            add(1);
+            add(1);
+        }};
+        sortedAndDistinctList = new ArrayList<>(){{
+            add(65);
+            add(24);
+            add(12);
+            add(7);
+            add(3);
+            add(1);
+        }};
     }
 
     @Test
