@@ -14,11 +14,11 @@ public class NumberCheckerTest {
     //NumberChecker is not a static class, though it could be, so it is initialised
     NumberChecker numberChecker;
     //Other lists are initialised for the test
-    List<Integer> listOfNumbers;
-    List<Integer> listOfDistinctNumbers;
-    List<Integer> wrongList;
-    List<Integer> sortedList;
-    List<Integer> sortedAndDistinctList;
+    List<Number> listOfNumbers;
+    List<Number> listOfDistinctNumbers;
+    List<Number> wrongList;
+    List<Number> sortedList;
+    List<Number> sortedAndDistinctList;
 
     //Set up stage, anything that goes to the tests is set up here to keep the code DRY
     @Before
