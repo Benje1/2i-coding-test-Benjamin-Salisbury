@@ -179,6 +179,7 @@ public class NumberCheckerTest {
         assertArrayEquals(wrongList.toArray(), NumberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
     }
 
+    //Testing that the methods still work when using a 
     @Test
     public void doubleOnlyListRemoveDuplicates(){
         assertArrayEquals(distinctDoubleOnlyLit.toArray(), NumberChecker.removeDuplicates(onlyDoubleList).toArray());
@@ -199,6 +200,7 @@ public class NumberCheckerTest {
         assertArrayEquals(listWithoutDuplicates.toArray(), NumberChecker.removeDuplicates(listWithDoublesAndDuplicates).toArray());
     }
 
+    // Issue with sorting, not reading Integers and Double as numbers
     @Test
     public void sortDoublesInDescendingOrder(){
         assertArrayEquals(listWithSortedDoubles.toArray(), NumberChecker.sortNumbersFromHighToLow(listWithDoublesAndDuplicates).toArray());
