@@ -179,7 +179,7 @@ public class NumberCheckerTest {
         assertArrayEquals(wrongList.toArray(), NumberChecker.sortNumbersFromHighToLow(listOfNumbers).toArray());
     }
 
-    //Testing that the methods still work when using a 
+    //Testing that the methods still work when using a double only List
     @Test
     public void doubleOnlyListRemoveDuplicates(){
         assertArrayEquals(distinctDoubleOnlyLit.toArray(), NumberChecker.removeDuplicates(onlyDoubleList).toArray());

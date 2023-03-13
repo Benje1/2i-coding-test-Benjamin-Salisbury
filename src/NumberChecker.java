@@ -23,8 +23,19 @@ public abstract class NumberChecker {
 
     //Using the java inbuilt function of sort() and reverse order the list is sorted to the desired descending order
     public static List<Number> sortNumbersFromHighToLow(List<Number> listOfNumbers){
-        Collections.sort(listOfNumbers, Collections.reverseOrder());
-        return listOfNumbers;
+        //As the sort function has issues with dealing with a mixed Integer and Double array everything will be cast into Double
+        List<Number> castIntoDoubles = new ArrayList<>();
+        for(Number i : listOfNumbers){
+            if(i instanceof Integer){
+                Double newDouble = i.doubleValue();
+                castIntoDoubles.add(newDouble);
+            } else{
+                castIntoDoubles.add(i);
+            }
+        }
+        Collections.sort(castIntoDoubles, Collections.reverseOrder());
+        //If the number is the same after floor and ceiling then it is a .0 and can be converted back into integers
+        return castIntoDoubles;
     }
 
     //Function that uses the other two functions above, reducing the amount of code the man function has, working on the solid principals. i.e. separation of concerns
