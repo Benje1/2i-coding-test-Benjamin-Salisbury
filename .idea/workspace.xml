@@ -60,7 +60,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NumberCheckerTest.sortDoublesInDescendingOrder">
+  <component name="RunManager" selected="JUnit.NumberCheckerTest">
     <configuration name="NumberCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Two-I-Codeing-Test" />
       <option name="PACKAGE_NAME" value="" />
@@ -75,16 +75,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NumberCheckerTest" />
       <option name="METHOD_NAME" value="failTestAsNotOrderedOrDistinct" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberCheckerTest.isTheListSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Two-I-Codeing-Test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NumberCheckerTest" />
-      <option name="METHOD_NAME" value="isTheListSorted" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,13 +100,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NumberCheckerTest.sortedAndDistinctListOfDoubles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Two-I-Codeing-Test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NumberCheckerTest" />
+      <option name="METHOD_NAME" value="sortedAndDistinctListOfDoubles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NumberCheckerTest.sortDoublesInDescendingOrder" />
         <item itemvalue="JUnit.NumberCheckerTest" />
+        <item itemvalue="JUnit.NumberCheckerTest.sortedAndDistinctListOfDoubles" />
+        <item itemvalue="JUnit.NumberCheckerTest.sortDoublesInDescendingOrder" />
         <item itemvalue="JUnit.NumberCheckerTest.sortAndRemoveDuplicates" />
         <item itemvalue="JUnit.NumberCheckerTest.failTestAsNotOrderedOrDistinct" />
-        <item itemvalue="JUnit.NumberCheckerTest.isTheListSorted" />
       </list>
     </recent_temporary>
   </component>

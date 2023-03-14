@@ -112,7 +112,7 @@ public class NumberCheckerTest {
             add(3.5);
             add(1.4);
             add(9.4);
-            add(10.0);
+            add(10.1);
             add(3.5);
             add(3.6);
             add(8.4);
@@ -122,12 +122,12 @@ public class NumberCheckerTest {
             add(3.5);
             add(1.4);
             add(9.4);
-            add(10.0);
+            add(10.1);
             add(3.6);
             add(8.4);
         }};
         sortedDoubleOnlyList = new ArrayList<>(){{
-            add(10.0);
+            add(10.1);
             add(9.4);
             add(8.4);
             add(8.4);
@@ -137,7 +137,7 @@ public class NumberCheckerTest {
             add(1.4);
         }};
         distinctAndSortedDoubleOnlyList = new ArrayList<>(){{
-            add(10.0);
+            add(10.1);
             add(9.4);
             add(8.4);
             add(3.6);
